@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Backend.Models.MetalsDbContext">
+    <Position X="6.5" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAABAAAAAAAEEAAgAAAAAAAAARAAAQ=</HashCode>
+      <FileName>Models\MetalsDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Backend.Controllers.StatisticController">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQTAAAAACAAAIAAAAAAIAAAAAAAEAAAAAAQCAAAAA=</HashCode>
+      <FileName>Controllers\StatisticController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_statisticMService" />
+      <Field Name="_statisticLService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Backend.Services.Statistics.StatisticL.StatisticLService">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Statistics\StatisticL\StatisticLService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Backend.Services.StatisticMService">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAAAAAAABAIAAAAAAIAAAAAAAEAAAAAAQCAAAAA=</HashCode>
+      <FileName>Services\Statistics\StatisticM\StatisticMService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Backend.Data.StatisticDto" Collapsed="true">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAACAACAAAAAAGAAAAEAAAAAAAAAAAAAAAEQ=</HashCode>
+      <FileName>Data\StatisticDto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Backend.Models.Angle" Collapsed="true">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQIAAAAAA=</HashCode>
+      <FileName>Models\angle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Backend.Models.Atom" Collapsed="true">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Property Name="x" Hidden="true" />
+      <Property Name="y" Hidden="true" />
+      <Property Name="z" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQCAAABAIAIAAAAgAQAgAIgABBgAQQAAAQ=</HashCode>
+      <FileName>Models\atom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Backend.Models.Chain" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAFAAIAAAQAABAAAAAAAAgAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\chain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Backend.Models.Distance" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAQIAABAAA=</HashCode>
+      <FileName>Models\Distance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Backend.Models.Geometry" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAgAAAAAAACAAAAAAAAFAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Geometry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Backend.Models.Pdb" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAQAAABCABAAgAACAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Models\Pdb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Backend.Models.Residue" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAABBAAAgAQAgAAQAAAAABAAAAQAAAA=</HashCode>
+      <FileName>Models\Residue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

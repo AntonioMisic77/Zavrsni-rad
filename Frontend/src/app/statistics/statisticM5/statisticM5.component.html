@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <h2>BioMetals </h2>
+
+        <p>This statistic shows distributions how metal ion is connected with other atoms that belongs to same chain.</p>
+        <app-loading-spinner *ngIf="isLoading == true"></app-loading-spinner>
+        <table class="table table-hover" *ngIf="isLoading == false">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Selected Metal</th>
+                    <th scope="col">Another atom</th>
+                    <th scope="col">Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let element of dto;">
+                    <td>{{element.atom1Name}}</td>
+                    <td>{{element.atom2Name}}</td>
+                    <td>{{element.count}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

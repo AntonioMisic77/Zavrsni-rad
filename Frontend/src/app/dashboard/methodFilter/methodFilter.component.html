@@ -1,0 +1,24 @@
+<div class="container">
+    <form [formGroup]="filterForm" (ngSubmit)="onSubmit()">
+        <div class="title">
+            <p>Filter by method</p>
+            <i class="bi bi-info-circle-fill"></i>
+        </div>
+        <div class="form-check mt-2">
+            <input type="radio" value="ANY" class="form-check-input" formControlName="filter">
+            <label class="form-check-label ms-2">Any Method</label>
+        </div>
+        <div class="form-check d-flex flex-row mt-2">
+            <input type="radio"  class="form-check-input" value="XRAY" formControlName="filter">
+            <label class="form-check-label ms-3">XRAY method</label>
+            <input type="number" placeholder="Resolution" class="input ms-4" #resolution>
+        </div>
+        <div class="form-check mt-2">
+            <input type="radio" class="form-check-input" value="NMR" formControlName="filter">
+            <label class="form-check-label ms-2">NMR method</label>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-info btn-sm custom-button" [disabled]="!filterForm.valid">OK</button>
+        </div>       
+    </form>
+</div>

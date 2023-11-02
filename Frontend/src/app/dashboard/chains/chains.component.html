@@ -1,0 +1,19 @@
+<div class="container">
+    <form [formGroup]="chainForm" (ngSubmit)="onSubmit()">
+        <div class="title">
+            <span>Chain Types</span>
+            <i class="bi bi-info-circle-fill"></i>
+        </div>
+        <div class="main">
+            <div class="form-check" *ngFor="let chain of chainTypes">
+                <input type="checkbox" 
+                       name="chain" 
+                       class="form-check-input"
+                       value="{{chain}}"
+                       (change)="onChange($event)">
+                <label class="form-check-label label">{{chain}}</label>
+            </div>
+            <button class="btn btn-info btn-sm" type="submit" [disabled]="!chainForm.valid">OK</button>
+        </div>  
+    </form>
+</div>

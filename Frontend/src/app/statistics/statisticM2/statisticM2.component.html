@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <h2>Coordination - {{dto.metals[0]}}</h2>
+
+        <p>This statistic shows distributions of metal's atoms by coordination number. </p>
+        <app-loading-spinner *ngIf="isLoading == true"></app-loading-spinner>
+        <table class="table table-hover" *ngIf="isLoading == false">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Coordination Number</th>
+                    <th scope="col">Atom count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{dto.coordNumber}}</td>
+                    <td>{{counter}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

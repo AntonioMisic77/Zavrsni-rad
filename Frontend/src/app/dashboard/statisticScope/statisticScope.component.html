@@ -1,0 +1,27 @@
+<div class="container main-container">
+    <form [formGroup]="scopeForm" (ngSubmit)="onSubmit()">
+        <div class="title">
+            <p>Statistic scope</p>
+            <i class="bi bi-info-circle-fill"></i>
+        </div>
+        <div class="form-check d-flex flex-row">
+            <input type="radio" name="scope" value="singlePdb" class="form-check-input" checked  formControlName="scope">
+            <label class="form-check-label ms-3">Single PDB: </label>
+            <input type="text" class="input" placeholder="PDB code" #pdb>        
+        </div>
+        <div class="form-check d-flex flex-row mt-2">
+            <input type="radio" name="scope" value="listPdb" class="form-check-input" formControlName="scope"> 
+            <label class="form-check-label ms-3"> Input PDB codes:</label> 
+            <button class="btn btn-sm ms-3">Input PDBs</button>
+        </div>
+        <div class="form-check mt-2">
+            <input type="radio" name="scope" value="set" class="form-check-input" formControlName="scope">
+            <label class="form-check-label ms-2">Representive set </label> 
+        </div>
+        <div class="form-check mt-2 mb-2">
+            <input type="radio" name="scope" value="allPdbs" class="form-check-input" formControlName="scope">
+            <label class="form-check-label ms-2">All PDBs</label>
+            <button type="submit" class="btn btn-info btn-sm custom-button" [disabled]="!scopeForm.valid">OK</button>
+        </div>
+    </form>
+</div>

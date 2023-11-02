@@ -1,0 +1,21 @@
+.input{
+    height: 27px;
+    width: 6.2vw;
+    border-radius: 5%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 1vh;
+}
+
+.icon{
+    position: absolute;
+    font-size: 25px;
+    left: 56vw;
+    top: 25.2vh;
+}

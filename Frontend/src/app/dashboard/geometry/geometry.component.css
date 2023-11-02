@@ -1,0 +1,29 @@
+
+.inline{
+    display: flex;
+    flex-direction: row;
+}
+
+.input{
+    width: 4vw;
+    height: 4vh;
+    margin-left: 4vw;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 1vh;
+}
+
+.distance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    border: 1px solid whitesmoke;
+}

@@ -1,0 +1,29 @@
+.main-container{
+    margin-top: 5px;
+}
+
+.input{
+    height: 27px;
+    width: 6vw;
+    margin-left: 3vw;
+    border-radius: 5%;
+    box-shadow: blue;
+}
+
+.custom-button{
+    margin-left: 6vw;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.icon{
+    font-size: 25px;
+    position: absolute;
+    left: 29.5vw;
+    top: 25vh;
+}

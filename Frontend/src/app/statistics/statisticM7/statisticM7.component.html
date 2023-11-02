@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <h2>BioMetals </h2>
+
+        <p>This statistic shows average distance and standard deviations between atoms of selected ions and atoms of element O,N,S,CL,F.</p>
+        <app-loading-spinner *ngIf="isLoading == true"></app-loading-spinner>
+        <table class="table table-hover" *ngIf="isLoading == false">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Selected Metal</th>
+                    <th scope="col">Atom element</th>
+                    <th scope="col">Count</th>
+                    <th scope="col">Avarege distance </th>
+                    <th scope="col">Standard deviation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let element of dto;">
+                    <td>{{element.atom1Name}}</td>
+                    <td>{{element.atom2Name}}</td>
+                    <td>{{element.count}}</td>
+                    <td>{{element.avg}}</td>
+                    <td>{{element.stdev}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

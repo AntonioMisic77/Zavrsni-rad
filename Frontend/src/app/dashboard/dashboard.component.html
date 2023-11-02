@@ -1,0 +1,31 @@
+<div class="container main-container">    
+    <div class="row">
+        <div class="col-12 title">
+            <span>BioMe - Biologicaly relevant Metals</span>
+        </div> 
+        <div class="col-3 border scope">
+            <app-scope></app-scope>
+        </div>
+        <div class="col-3 border filter">
+            <app-filter></app-filter>
+        </div>
+        <div class="col-4  multi">
+           <app-geometry></app-geometry>
+        </div>
+        <div class="col-3 border metals">
+            <app-metals></app-metals>
+        </div>
+        <div class="col-5 border lingads">
+            <app-ligands></app-ligands>
+        </div>
+        <div class="col-2 border chain">
+             <app-chains></app-chains>
+        </div>
+        <div class="col-12 buttons">
+            <button class="btn btn-info btn" (click)="onSubmit()">Submit</button>
+            <button class="btn btn-info btn">About</button>
+            <button class="btn btn-info btn">Help</button>
+            <button class="btn btn-info btn" (click)="onLoadExample()">Load example</button>
+        </div>
+    </div>
+</div>

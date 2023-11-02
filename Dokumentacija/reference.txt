@@ -1,0 +1,19 @@
+PyMOL:
+
+The PyMOL Molecular Graphics System, Version 2.0. Schrödinger, LLC.
+DeLano, W. L. (2002). PyMOL: An open-source molecular graphics tool. CCP4 Newsletter On Protein Crystallography, 40, 82-92.
+UCSF ChimeraX:
+
+Goddard, T. D., Huang, C. C., Meng, E. C., Pettersen, E. F., Couch, G. S., Morris, J. H., & Ferrin, T. E. (2018). UCSF ChimeraX: Meeting modern challenges in visualization and analysis. Protein Science, 27(1), 14-25.
+VMD (Visual Molecular Dynamics):
+
+Humphrey, W., Dalke, A., & Schulten, K. (1996). VMD: Visual molecular dynamics. Journal of Molecular Graphics, 14(1), 33-38.
+Schrödinger Suite:
+
+Schrödinger Release 2020-2: Schrödinger Suite 2020-2 Protein Preparation Wizard; Epik, Schrödinger, LLC, New York, NY, 2020; Impact, Schrödinger, LLC, New York, NY, 2020; Prime, Schrödinger, LLC, New York, NY, 2020; Maestro, Schrödinger, LLC, New York, NY, 2020.
+MEPSUS (Metal Sites in Proteins Uniformly Sampled):
+
+Hsin, K., & Walkinshaw, M. D. (2008). MEPSUS: a database of the geometry of metal sites in proteins. Journal of Applied Crystallography, 41(6), 1083-1087.
+MIPS (Molecular Interaction Potential Site):
+
+Xu, Q. S., Yan, S. M., & Ding, J. X. (2003). MIPS: a database searching method for protein-ligand interaction sites. Acta Pharmacologica Sinica, 24(5), 481-486.

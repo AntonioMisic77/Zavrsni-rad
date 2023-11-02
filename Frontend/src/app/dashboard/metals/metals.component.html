@@ -1,0 +1,20 @@
+<div class="container">
+    <form class="mt-2" [formGroup]="metalsForm" (ngSubmit)="onSubmit()">   
+       <div class="title">
+            <span>Metals</span>
+            <i class="bi bi-info-circle-fill"></i>
+       </div>
+       <div class="form check d-flex flex-row" *ngFor="let metalList of metals;">
+            <div class="form-check" *ngFor="let metal of metalList;">
+                <input type="checkbox" name="{{metal.name}}" class="form-check-input" value="{{metal.name}}" [checked]="metal.checked" (change)="onChange($event)">
+                <label class="form-check-label label">{{metal.name}}</label>      
+            </div> 
+        </div>
+        <div class="form-check mt-1">
+            <button class="btn btn-sm btn-info button" type="submit" [disabled]="!metalsForm.valid">OK</button>
+            <button class="btn btn-sm" (click)="onToogle()" type="button">Toogle</button>  
+        </div>
+             
+    </form>
+    
+</div>

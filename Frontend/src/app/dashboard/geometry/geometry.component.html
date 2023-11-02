@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="geometryForm" (ngSubmit)="onSubmit()">
+            <div class="form-group distance">
+                <div class="title">
+                    <span>Distance</span>
+                    <i class="bi bi-info-circle-fill"></i>
+                </div>
+                <div class="inline">
+                   <label class="form-label">Metal distance [0-7] </label>
+                   <input type="number" class="form-control input"  formControlName="distance"> 
+                </div>   
+            </div>
+            <div class="distance mt-3">
+                <div class="title">
+                    <span>Coordination & Geometry</span>
+                    <i class="bi bi-info-circle-fill"></i>
+                </div>
+                <div class="form-group inline">
+                    <label class="form-label">Coordination number > </label>
+                    <input type="number" class="form-control input" formControlName="cordNumber">
+                </div>
+                <div class="form-group inline">
+                    <label class="form-label">RMSD < </label>
+                    <input type="number" class="form-control input"  formControlName="RMSD">
+                    <button class="btn btn-info btn-sm" type="submit" [disabled]="!geometryForm.valid">OK</button>
+                </div>
+            </div>  
+        </form>
+    </div>
+</div>
