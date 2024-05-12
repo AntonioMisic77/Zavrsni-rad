@@ -6,8 +6,19 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("DbConnectionString");
 
+var DB_HOST = builder.Configuration["DB_HOST"];
+var DB_PORT = builder.Configuration["DB_PORT"];
+var DB_USER = builder.Configuration["DB_USER"];
+var DB_PASSWORD = builder.Configuration["DB_PASSWORD"];
+var DB_NAME = builder.Configuration["DB_NAME"];
+
+var connectionString = $"Host={DB_HOST};Port={DB_PORT};Database={DB_NAME};Username={DB_USER};Password={DB_PASSWORD}";
+
+if (connectionString == null)
+{
+    connectionString = builder.Configuration.GetConnectionString("DbConnectionString");
+}
 // Add services to the container.
 builder.Services.AddDbContext<MetalsDbContext>(options =>
 {
@@ -29,7 +40,10 @@ builder.Services.AddTransient<IStatisticLService, StatisticLService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddHealthChecks();
 var app = builder.Build();
+
+app.MapHealthChecks("/health");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

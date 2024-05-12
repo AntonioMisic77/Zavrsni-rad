@@ -33,7 +33,6 @@ C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\Backend.
 C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\staticwebassets.build.json
 C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\staticwebassets.development.json
 C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\scopedcss\bundle\Backend.styles.css
-C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\Backend.csproj.CopyComplete
 C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\Backend.dll
 C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\ref\Backend.dll
 C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\Backend.pdb
@@ -44,3 +43,5 @@ C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\staticwe
 C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Backend.props
 C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\refint\Backend.dll
+C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\Backend.sourcelink.json
+C:\Projects\fakultet\ZavrsniRad\metals\Backend\Backend\obj\Debug\net6.0\Backend.csproj.Up2Date
